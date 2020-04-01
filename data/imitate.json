@@ -1,0 +1,186 @@
+{
+    "activity" : "Imitate",
+    "data" : [
+        {
+            "image" : "assets/img/imitate/elefante.png",
+            "text"  : "Elefante",
+            "sound" : "sound/imitate/elefante.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/pollito.png",
+            "text" : "Pollito",
+            "sound" : "sound/imitate/pollito.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/perro.png",
+            "text" : "Perro",
+            "sound" : "sound/imitate/perro.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/cerdo.png",
+            "text" : "Cerdo",
+            "sound" : "sound/imitate/cerdo.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/pato.png",
+            "text" : "Pato",
+            "sound" : "sound/imitate/pato.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/gallo.png",
+            "text" : "Gallo",
+            "sound" : "sound/imitate/gallo.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/leon.png",
+            "text" : "León",
+            "sound" : "sound/imitate/leon.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/lobo.png",
+            "text" : "Lobo",
+            "sound" : "sound/imitate/lobo.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/rana.png",
+            "text" : "Rana",
+            "sound" : "sound/imitate/rana.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/vaca.png",
+            "text" : "Vaca",
+            "sound" : "sound/imitate/vaca.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/gato.png",
+            "text" : "Gato",
+            "sound" : "sound/imitate/gato.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/caballo.png",
+            "text" : "Caballo",
+            "sound" : "sound/imitate/caballo.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/buho.png",
+            "text" : "Búho",
+            "sound" : "sound/imitate/buho.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/burro.png",
+            "text" : "Burro",
+            "sound" : "sound/imitate/burro.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/mono.png",
+            "text" : "Mono",
+            "sound" : "sound/imitate/mono.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/serpiente.png",
+            "text" : "Serpiente",
+            "sound" : "sound/imitate/serpiente.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/oveja.png",
+            "text" : "Oveja",
+            "sound" : "sound/imitate/oveja.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/trompeta.png",
+            "text" : "Trompeta",
+            "sound" : "sound/imitate/trompeta.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/tambor.png",
+            "text" : "Tambor",
+            "sound" : "sound/imitate/tambor.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/ambulancia.png",
+            "text" : "Ambulancia",
+            "sound" : "sound/imitate/ambulancia.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/bomberos.png",
+            "text" : "Bomberos",
+            "sound" : "sound/imitate/bomberos.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/moto.png",
+            "text" : "Motocicleta",
+            "sound" : "sound/imitate/moto.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/tren.png",
+            "text" : "Tren",
+            "sound" : "sound/imitate/tren.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/beso.png",
+            "text" : "Beso",
+            "sound" : "sound/imitate/beso.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/bostezar.png",
+            "text" : "Bostezar",
+            "sound" : "sound/imitate/bostezo.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/callar.png",
+            "text" : "Silencio",
+            "sound" : "sound/imitate/callar.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/gritar.png",
+            "text" : "Gritar",
+            "sound" : "sound/imitate/grito.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/tose.png",
+            "text" : "Toser",
+            "sound" : "sound/imitate/tos.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/risas.png",
+            "text" : "Risas",
+            "sound" : "sound/imitate/risas.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/llorar.png",
+            "text" : "Llorar",
+            "sound" : "sound/imitate/llanto.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/silbar.png",
+            "text" : "Silbar",
+            "sound" : "sound/imitate/silbar.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/soplar.png",
+            "text" : "Soplar",
+            "sound" : "sound/imitate/soplar.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/viento.png",
+            "text" : "Viento",
+            "sound" : "sound/imitate/viento.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/bomba.png",
+            "text" : "Explosión de bomba",
+            "sound" : "sound/imitate/bomba.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/telefono.png",
+            "text" : "Teléfono",
+            "sound" : "sound/imitate/telefono.mp3"
+        },
+        {
+            "image" : "assets/img/imitate/despertador.png",
+            "text" : "Despertador",
+            "sound" : "sound/imitate/despertador.mp3"
+        }
+        
+    ]
+}
