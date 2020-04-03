@@ -19,16 +19,15 @@ class _ImitatePageState extends State<ImitatePage> {
       appBar: AppBar(
         title: Text('Imita el sonido')
       ),
-      body:
-        _data(),
-        floatingActionButton: Visibility( 
-          visible: _isVisible,
-          child: FloatingActionButton(
-            child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
-            backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-            onPressed: () => _show(context)
-          )
-        ),
+      body:_data(),
+      floatingActionButton: Visibility( 
+        visible: _isVisible,
+        child: FloatingActionButton(
+          child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
+          backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
+          onPressed: () => _show(context)
+        )
+      ),
     );
   }
 
@@ -37,9 +36,15 @@ class _ImitatePageState extends State<ImitatePage> {
       future: imitateProvider.loadData(),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
-        return ListView(
+        return Padding(
+        padding: EdgeInsets.only(top:60.0,left: 15.0),
+        child: Wrap(
+          alignment: WrapAlignment.spaceEvenly,
+          spacing: 3.0, // gap between adjacent chips
+          runSpacing: 3.0, // gap between lines
           children: _dataItems(snapshot.data),
-        );
+        )
+      );
       },
     );
   }
@@ -47,25 +52,9 @@ class _ImitatePageState extends State<ImitatePage> {
   List<Widget> _dataItems( List<dynamic> db){
     final List<Widget> items=[];
 
-    GridView.count(
-      primary: false,
-      padding: const EdgeInsets.all(20),
-      crossAxisSpacing: 10,
-      mainAxisSpacing: 10,
-      crossAxisCount: 2,
-      children: <Widget>[
-        
-      ]
-    );
-
     db.sublist(start,end).forEach((opt){
-     
-      final widgetTemp=Container(
-        child:
-          _createButtons(opt['text'], opt['image'], opt['sound'])
-      );
+      final widgetTemp=_createButtons(opt['text'], opt['image'], opt['sound']);
       items..add(widgetTemp);
-      
     });
     return items;
   }
@@ -73,17 +62,17 @@ class _ImitatePageState extends State<ImitatePage> {
   Widget _createButtons(String text, String image, String sound){
     return ClipRect(
       child: Container(
-        height: 190.0,
-        width: 160.0,
-        margin: EdgeInsets.all(15.0),
+        height: 170.0,
+        width: 145.0,
+        margin: EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15.0),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.2),
-              spreadRadius: 5,
-              blurRadius: 5,
+              spreadRadius: 3,
+              blurRadius: 3,
               offset: Offset(0, 5)
             ),
           ],
@@ -95,16 +84,15 @@ class _ImitatePageState extends State<ImitatePage> {
               Container(
                 child: Icon(Icons.volume_up),
                 alignment: Alignment.bottomRight,
-                padding: EdgeInsets.only(right:10.0, top: 5.0),
+                padding: EdgeInsets.only(right:1.0, top: 2.0),
               ),
-              SizedBox(height: 5.0),
               Container(
                 child: Image.asset(image),
-                height: 120.0,
+                height: 100.0,
               ),
-              SizedBox(height: 5.0),
+              SizedBox(height: 2.0),
               Text(text, style: TextStyle(color: Colors.black)),
-              SizedBox(height: 5.0),
+              SizedBox(height: 3.0),
             ],
           ),
           onPressed: (){

@@ -30,8 +30,11 @@ class _SoundPageState extends State<SoundPage> {
       future: soundProvider.loadData(),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
-        return ListView(
-          children: _dataItems(snapshot.data),
+        return Padding(
+          padding: EdgeInsets.only(top:60.0,left: 10.0),
+          child: Column(
+            children: _dataItems(snapshot.data)
+          ),
         );
       },
     );
@@ -42,20 +45,15 @@ class _SoundPageState extends State<SoundPage> {
     
     db.forEach((opt){
       
-      final widgetTemp=Column(
-        children: <Widget>[
-          _createButtons(opt['text'], opt['sound']),
-        ]
-      );
+      final widgetTemp= _createButtons(opt['text'], opt['sound']);
       items..add(widgetTemp);
-
     }); 
     return items;
   }
 
   Widget _createButtons(String text, String sound){
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 50.0),
+      padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
       child: Row(
         children: <Widget>[
           Container(
