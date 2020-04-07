@@ -6,6 +6,12 @@ class HomePage extends StatelessWidget {
   @override
   
   Widget build(BuildContext context) {
+
+    MediaQueryData deviceInfo = MediaQuery.of(context);
+    print('size: ${deviceInfo.size}');
+    print('padding: ${deviceInfo.padding}');
+    print('orientation: ${deviceInfo.orientation}');
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Inicio'),

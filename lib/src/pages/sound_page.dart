@@ -7,7 +7,11 @@ class SoundPage extends StatefulWidget {
 }
 
 class _SoundPageState extends State<SoundPage> {
-  @override
+
+  int _start=0;
+  int _end=3;
+  bool _isVisible = true;
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -19,7 +23,7 @@ class _SoundPageState extends State<SoundPage> {
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-            onPressed: () => {}
+            onPressed: () => _show(context)
           )
         ),
     );
@@ -43,8 +47,7 @@ class _SoundPageState extends State<SoundPage> {
   List<Widget> _dataItems( List<dynamic> db){
     final List<Widget> items=[];
     
-    db.forEach((opt){
-      
+    db.sublist(_start,_end).forEach((opt){
       final widgetTemp= _createButtons(opt['text'], opt['sound']);
       items..add(widgetTemp);
     }); 
@@ -114,5 +117,15 @@ class _SoundPageState extends State<SoundPage> {
         ],
       )
     );
+  }
+  void _show(BuildContext context){
+    setState(() {
+      _start+=3;
+      _end+=3;
+      
+      if(_end==36){
+        _isVisible = !_isVisible;
+      }
+    });
   }
 }

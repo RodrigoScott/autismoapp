@@ -10,8 +10,8 @@ class ImitatePage extends StatefulWidget {
 
 class _ImitatePageState extends State<ImitatePage> {
 
-  int start=0;
-  int end=4;
+  int _start=0;
+  int _end=4;
   bool _isVisible = true;
 
   Widget build(BuildContext context) {
@@ -36,8 +36,8 @@ class _ImitatePageState extends State<ImitatePage> {
       future: imitateProvider.loadData(),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
-        return Padding(
-        padding: EdgeInsets.only(top:60.0,left: 15.0),
+        return Container(
+        padding: EdgeInsets.only(top:60.0,left: 15.0, right: 15.0),
         child: Wrap(
           alignment: WrapAlignment.spaceEvenly,
           spacing: 3.0, // gap between adjacent chips
@@ -52,7 +52,7 @@ class _ImitatePageState extends State<ImitatePage> {
   List<Widget> _dataItems( List<dynamic> db){
     final List<Widget> items=[];
 
-    db.sublist(start,end).forEach((opt){
+    db.sublist(_start,_end).forEach((opt){
       final widgetTemp=_createButtons(opt['text'], opt['image'], opt['sound']);
       items..add(widgetTemp);
     });
@@ -106,10 +106,10 @@ class _ImitatePageState extends State<ImitatePage> {
 
   void _show(BuildContext context){
     setState(() {
-      start+=4;
-      end+=4;
+      _start+=4;
+      _end+=4;
       
-      if(end==36){
+      if(_end==36){
         _isVisible = !_isVisible;
       }
     });

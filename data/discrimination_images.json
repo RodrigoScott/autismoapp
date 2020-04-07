@@ -1,0 +1,185 @@
+{
+    "activity" : "DiscriminationImages",
+    "data" : [
+        {
+            "image" : "assets/img/discrimination/arcoiris.png",
+            "text"  : "Arcoiris"
+        },
+        {
+            "image" : "assets/img/discrimination/automovil.png",
+            "text"  : "Automóvil"
+        },
+        {
+            "image" : "assets/img/discrimination/bicicleta.png",
+            "text"  : "Bicicleta"
+        },
+        {
+            "image" : "assets/img/discrimination/bombero.png",
+            "text"  : "Bombero"
+        },
+        {
+            "image" : "assets/img/discrimination/carpintero.png",
+            "text"  : "Carpintero"
+        },
+        {
+            "image" : "assets/img/discrimination/estrella.png",
+            "text"  : "Estrella"
+        },
+        {
+            "image" : "assets/img/discrimination/borrador.png",
+            "text"  : "Borrador"
+        },
+        {
+            "image" : "assets/img/discrimination/bufanda.png",
+            "text"  : "Bufanda"
+        },
+        {
+            "image" : "assets/img/discrimination/pantalon.png",
+            "text"  : "Pantalón"
+        },
+        {
+            "image" : "assets/img/discrimination/cuchara.png",
+            "text"  : "Cuchara"
+        },
+        {
+            "image" : "assets/img/discrimination/florero.png",
+            "text"  : "Florero"
+        },
+        {
+            "image" : "assets/img/discrimination/tenedor.png",
+            "text"  : "Tenedor"
+        },
+        {
+            "image" : "assets/img/discrimination/mesa.png",
+            "text"  : "Mesa"
+        },
+        {
+            "image" : "assets/img/discrimination/hoja.png",
+            "text"  : "Hoja de papel"
+        },
+        {
+            "image" : "assets/img/discrimination/sacapuntas.png",
+            "text"  : "Sacapuntas"
+        },
+        {
+            "image" : "assets/img/discrimination/triciclo.png",
+            "text"  : "Triciclo"
+        },
+        {
+            "image" : "assets/img/discrimination/tenedor.png",
+            "text"  : "Tenedor"
+        },
+        {
+            "image" : "assets/img/discrimination/bicicleta.png",
+            "text"  : "Bicicleta"
+        },
+        {
+            "image" : "assets/img/discrimination/florero.png",
+            "text"  : "Florero"
+        },
+        {
+            "image" : "assets/img/discrimination/manzana.png",
+            "text"  : "Manzana"
+        },
+        {
+            "image" : "assets/img/discrimination/pina.png",
+            "text"  : "Piña"
+        },
+        {
+            "image" : "assets/img/discrimination/silla.png",
+            "text"  : "Silla"
+        },
+        {
+            "image" : "assets/img/discrimination/mesa.png",
+            "text"  : "Mesa"
+        },
+        {
+            "image" : "assets/img/discrimination/maestra.png",
+            "text"  : "Maestra"
+        },
+        {
+            "image" : "assets/img/discrimination/cuchara.png",
+            "text"  : "Cuchara"
+        },
+        {
+            "image" : "assets/img/discrimination/lapiz.png",
+            "text"  : "Lápiz"
+        },
+        {
+            "image" : "assets/img/discrimination/libreta.png",
+            "text"  : "Libreta"
+        },
+        {
+            "image" : "assets/img/discrimination/carpintero.png",
+            "text"  : "Carpintero"
+        },
+        {
+            "image" : "assets/img/discrimination/zapatero.gif",
+            "text"  : "Zapatero"
+        },
+        {
+            "image" : "assets/img/discrimination/sueter.png",
+            "text"  : "Suéter"
+        },
+        {
+            "image" : "assets/img/discrimination/arcoiris.png",
+            "text"  : "Arcoiris"
+        },
+        {
+            "image" : "assets/img/discrimination/tijeras.png",
+            "text"  : "Tijeras"
+        },
+        {
+            "image" : "assets/img/discrimination/hoja.png",
+            "text"  : "Hoja de papel"
+        },
+        {
+            "image" : "assets/img/discrimination/pera.png",
+            "text"  : "Pera"
+        },
+        {
+            "image" : "assets/img/discrimination/luna.png",
+            "text"  : "Luna"
+        },
+        {
+            "image" : "assets/img/discrimination/manzana.png",
+            "text"  : "Manzana"
+        },
+        {
+            "image" : "assets/img/discrimination/sueter.png",
+            "text"  : "Suéter"
+        },
+        {
+            "image" : "assets/img/discrimination/bufanda.png",
+            "text"  : "Bufanda"
+        },
+        {
+            "image" : "assets/img/discrimination/hoja.png",
+            "text"  : "Hoja de papel"
+        },
+        {
+            "image" : "assets/img/discrimination/maestra.png",
+            "text"  : "Maestra"
+        },
+        {
+            "image" : "assets/img/discrimination/mesa.png",
+            "text"  : "Mesa"
+        },
+        {
+            "image" : "assets/img/discrimination/bombero.png",
+            "text"  : "Bombero"
+        },
+        {
+            "image" : "assets/img/discrimination/lapiz.png",
+            "text"  : "Lápiz"
+        },
+        {
+            "image" : "assets/img/discrimination/automovil.png",
+            "text"  : "Automóvil"
+        },
+        {
+            "image" : "assets/img/discrimination/triciclo.png",
+            "text"  : "Triciclo"
+        }
+    ]
+}
