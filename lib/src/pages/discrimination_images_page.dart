@@ -105,6 +105,8 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
 
   void _show(BuildContext context){
     setState(() {
+      Navigator.pushNamed(context, 'animationGood');
+      
       _start+=3;
       _end+=3;
       

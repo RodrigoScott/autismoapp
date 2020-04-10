@@ -50,6 +50,10 @@ flutter:
    - data/sound.json
    - assets/img/discrimination/
    - data/discrimination_images.json
+   - assets/animation/bad/
+   - data/animation_bad.json
+   - assets/animation/good/
+   - data/animation_good.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

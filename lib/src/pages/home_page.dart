@@ -7,10 +7,10 @@ class HomePage extends StatelessWidget {
   
   Widget build(BuildContext context) {
 
-    MediaQueryData deviceInfo = MediaQuery.of(context);
+    /*MediaQueryData deviceInfo = MediaQuery.of(context);
     print('size: ${deviceInfo.size}');
     print('padding: ${deviceInfo.padding}');
-    print('orientation: ${deviceInfo.orientation}');
+    print('orientation: ${deviceInfo.orientation}');*/
 
     return Scaffold(
       appBar: AppBar(

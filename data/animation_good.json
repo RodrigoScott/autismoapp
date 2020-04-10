@@ -1,0 +1,53 @@
+{
+    "activity" : "AnimationGood",
+    "data" : [
+        {
+            "image"  : "assets/animation/good/aplausos.gif",
+            "sound" : "animation/good/aplausos.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/bien_hecho.gif",
+            "sound" : "animation/good/festejo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/aplausos_carita.gif",
+            "sound" : "animation/good/aplausos.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/sorpresa.gif",
+            "sound" : "animation/good/woohoo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/caja_sorpresa.gif",
+            "sound" : "animation/good/festejo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/fuegos_artificiales.gif",
+            "sound" : "animation/good/fuegos_artificiales.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/palomita.gif",
+            "sound" : "animation/good/festejo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/pulgar_arriba.gif",
+            "sound" : "animation/good/woohoo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/regalos.gif",
+            "sound" : "animation/good/festejo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/serpentina.gif",
+            "sound" : "animation/good/woohoo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/sorpresa_2.gif",
+            "sound" : "animation/good/festejo.mp3"
+        },
+        {
+            "image"  : "assets/animation/good/sorpresa_3.gif",
+            "sound" : "animation/good/festejo.mp3"
+        }
+    ]
+}

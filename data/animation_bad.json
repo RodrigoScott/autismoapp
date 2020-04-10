@@ -1,0 +1,21 @@
+{
+    "activity" : "Sound",
+    "data" : [
+        {
+            "text"  : "Vas",
+            "sound" : "soundImitate/elefante.mp3"
+        },
+        {
+            "text"  : "Gas",
+            "sound" : "soundImitate/elefante.mp3"
+        },
+        {
+            "text"  : "Iban",
+            "sound" : "soundImitate/elefante.mp3"
+        },
+        {
+            "text"  : "Iban",
+            "sound" : "soundImitate/elefante.mp3"
+        }
+    ]
+}
