@@ -2,184 +2,274 @@
     "activity" : "DiscriminationImages",
     "data" : [
         {
-            "image" : "assets/img/discrimination/arcoiris.png",
-            "text"  : "Arcoiris"
+            "id"        : 0,
+            "image"     : "assets/img/discrimination/arcoiris.png",
+            "text"      : "Arcoiris",
+            "category"  : "cielo"
         },
         {
-            "image" : "assets/img/discrimination/automovil.png",
-            "text"  : "Automóvil"
+            "id"        : 1,
+            "image"     : "assets/img/discrimination/automovil.png",
+            "text"      : "Automóvil",
+            "category"  : "transporte"
         },
         {
-            "image" : "assets/img/discrimination/bicicleta.png",
-            "text"  : "Bicicleta"
+            "id"        : 2,
+            "image"     : "assets/img/discrimination/bicicleta.png",
+            "text"      : "Bicicleta",
+            "category"  : "transporte"
         },
         {
-            "image" : "assets/img/discrimination/bombero.png",
-            "text"  : "Bombero"
+            "id"        : 3,
+            "image"     : "assets/img/discrimination/bombero.png",
+            "text"      : "Bombero",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/carpintero.png",
-            "text"  : "Carpintero"
+            "id"        : 4,
+            "image"     : "assets/img/discrimination/carpintero.png",
+            "text"      : "Carpintero",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/estrella.png",
-            "text"  : "Estrella"
+            "id"        : 5,
+            "image"     : "assets/img/discrimination/estrella.png",
+            "text"      : "Estrella",
+            "category"  : "cielo"
         },
         {
-            "image" : "assets/img/discrimination/borrador.png",
-            "text"  : "Borrador"
+            "id"        : 6,
+            "image"     : "assets/img/discrimination/borrador.png",
+            "text"      : "Borrador",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/bufanda.png",
-            "text"  : "Bufanda"
+            "id"        : 7,
+            "image"     : "assets/img/discrimination/bufanda.png",
+            "text"      : "Bufanda",
+            "category"  : "prenda"
         },
         {
-            "image" : "assets/img/discrimination/pantalon.png",
-            "text"  : "Pantalón"
+            "id"        : 8,
+            "image"     : "assets/img/discrimination/pantalon.png",
+            "text"      : "Pantalón",
+            "category"  : "prenda"
         },
         {
-            "image" : "assets/img/discrimination/cuchara.png",
-            "text"  : "Cuchara"
+            "id"        : 9,
+            "image"     : "assets/img/discrimination/cuchara.png",
+            "text"      : "Cuchara",
+            "category"  : "cubierto"
         },
         {
-            "image" : "assets/img/discrimination/florero.png",
-            "text"  : "Florero"
+            "id"        : 10,
+            "image"     : "assets/img/discrimination/puerta.png",
+            "text"      : "Puerta",
+            "category"  : "madera"
         },
         {
-            "image" : "assets/img/discrimination/tenedor.png",
-            "text"  : "Tenedor"
+            "id"        : 11,
+            "image"     : "assets/img/discrimination/tenedor.png",
+            "text"      : "Tenedor",
+            "category"  : "cubierto"
         },
         {
-            "image" : "assets/img/discrimination/mesa.png",
-            "text"  : "Mesa"
+            "id"        : 12,
+            "image"     : "assets/img/discrimination/mesa.png",
+            "text"      : "Mesa",
+            "category"  : "madera"
         },
         {
-            "image" : "assets/img/discrimination/hoja.png",
-            "text"  : "Hoja de papel"
+            "id"        : 13,
+            "image"     : "assets/img/discrimination/hoja.png",
+            "text"      : "Hoja de papel",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/sacapuntas.png",
-            "text"  : "Sacapuntas"
+            "id"        : 14,
+            "image"     : "assets/img/discrimination/sacapuntas.png",
+            "text"      : "Sacapuntas",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/triciclo.png",
-            "text"  : "Triciclo"
+            "id"        : 15,
+            "image"     : "assets/img/discrimination/triciclo.png",
+            "text"      : "Triciclo",
+            "category"  : "transporte"
         },
         {
-            "image" : "assets/img/discrimination/tenedor.png",
-            "text"  : "Tenedor"
+            "id"        : 16,
+            "image"     : "assets/img/discrimination/tenedor.png",
+            "text"      : "Tenedor",
+            "category"  : "cubierto"
         },
         {
-            "image" : "assets/img/discrimination/bicicleta.png",
-            "text"  : "Bicicleta"
+            "id"        : 17,
+            "image"     : "assets/img/discrimination/bicicleta.png",
+            "text"      : "Bicicleta",
+            "category"  : "transporte"
         },
         {
-            "image" : "assets/img/discrimination/florero.png",
-            "text"  : "Florero"
+            "id"        : 18,
+            "image"     : "assets/img/discrimination/puerta.png",
+            "text"      : "Puerta",
+            "category"  : "madera"
         },
         {
-            "image" : "assets/img/discrimination/manzana.png",
-            "text"  : "Manzana"
+            "id"        : 19,
+            "image"     : "assets/img/discrimination/manzana.png",
+            "text"      : "Manzana",
+            "category"  : "fruta"
         },
         {
-            "image" : "assets/img/discrimination/pina.png",
-            "text"  : "Piña"
+            "id"        : 20,
+            "image"     : "assets/img/discrimination/pina.png",
+            "text"      : "Piña",
+            "category"  : "fruta"
         },
         {
-            "image" : "assets/img/discrimination/silla.png",
-            "text"  : "Silla"
+            "id"        : 21,
+            "image"     : "assets/img/discrimination/silla.png",
+            "text"      : "Silla",
+            "category"  : "madera"
         },
         {
-            "image" : "assets/img/discrimination/mesa.png",
-            "text"  : "Mesa"
+            "id"        : 22,
+            "image"     : "assets/img/discrimination/mesa.png",
+            "text"      : "Mesa",
+            "category"  : "madera"
         },
         {
-            "image" : "assets/img/discrimination/maestra.png",
-            "text"  : "Maestra"
+            "id"        : 23,
+            "image"     : "assets/img/discrimination/maestra.png",
+            "text"      : "Maestra",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/cuchara.png",
-            "text"  : "Cuchara"
+            "id"        : 24,
+            "image"     : "assets/img/discrimination/cuchara.png",
+            "text"      : "Cuchara",
+            "category"  : "cubierto"
         },
         {
-            "image" : "assets/img/discrimination/lapiz.png",
-            "text"  : "Lápiz"
+            "id"        : 25,
+            "image"     : "assets/img/discrimination/lapiz.png",
+            "text"      : "Lápiz",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/libreta.png",
-            "text"  : "Libreta"
+            "id"        : 26,
+            "image"     : "assets/img/discrimination/libreta.png",
+            "text"      : "Libreta",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/carpintero.png",
-            "text"  : "Carpintero"
+            "id"        : 27,
+            "image"     : "assets/img/discrimination/carpintero.png",
+            "text"      : "Carpintero",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/zapatero.gif",
-            "text"  : "Zapatero"
+            "id"        : 28,
+            "image"     : "assets/img/discrimination/zapatero.gif",
+            "text"      : "Zapatero",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/sueter.png",
-            "text"  : "Suéter"
+            "id"        : 29,
+            "image"     : "assets/img/discrimination/sueter.png",
+            "text"      : "Suéter",
+            "category"  : "prenda"
         },
         {
-            "image" : "assets/img/discrimination/arcoiris.png",
-            "text"  : "Arcoiris"
+            "id"        : 30,
+            "image"     : "assets/img/discrimination/arcoiris.png",
+            "text"      : "Arcoiris",
+            "category"  : "cielo"
         },
         {
-            "image" : "assets/img/discrimination/tijeras.png",
-            "text"  : "Tijeras"
+            "id"        : 31,
+            "image"     : "assets/img/discrimination/tijeras.png",
+            "text"      : "Tijeras",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/hoja.png",
-            "text"  : "Hoja de papel"
+            "id"        : 32,
+            "image"     : "assets/img/discrimination/hoja.png",
+            "text"      : "Hoja de papel",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/pera.png",
-            "text"  : "Pera"
+            "id"        : 33,
+            "image"     : "assets/img/discrimination/pera.png",
+            "text"      : "Pera",
+            "category"  : "fruta"
         },
         {
-            "image" : "assets/img/discrimination/luna.png",
-            "text"  : "Luna"
+            "id"        : 34,
+            "image"     : "assets/img/discrimination/luna.png",
+            "text"      : "Luna",
+            "category"  : "cielo"
         },
         {
-            "image" : "assets/img/discrimination/manzana.png",
-            "text"  : "Manzana"
+            "id"        : 35,
+            "image"     : "assets/img/discrimination/manzana.png",
+            "text"      : "Manzana",
+            "category"  : "fruta"
         },
         {
-            "image" : "assets/img/discrimination/sueter.png",
-            "text"  : "Suéter"
+            "id"        : 36,
+            "image"     : "assets/img/discrimination/sueter.png",
+            "text"      : "Suéter",
+            "category"  : "prenda"
         },
         {
-            "image" : "assets/img/discrimination/bufanda.png",
-            "text"  : "Bufanda"
+            "id"        : 37,
+            "image"     : "assets/img/discrimination/bufanda.png",
+            "text"      : "Bufanda",
+            "category"  : "prenda"
         },
         {
-            "image" : "assets/img/discrimination/hoja.png",
-            "text"  : "Hoja de papel"
+            "id"        : 38,
+            "image"     : "assets/img/discrimination/hoja.png",
+            "text"      : "Hoja de papel",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/maestra.png",
-            "text"  : "Maestra"
+            "id"        : 39,
+            "image"     : "assets/img/discrimination/maestra.png",
+            "text"      : "Maestra",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/mesa.png",
-            "text"  : "Mesa"
+            "id"        : 40,
+            "image"     : "assets/img/discrimination/mesa.png",
+            "text"      : "Mesa",
+            "category"  : "madera"
         },
         {
-            "image" : "assets/img/discrimination/bombero.png",
-            "text"  : "Bombero"
+            "id"        : 41,
+            "image"     : "assets/img/discrimination/bombero.png",
+            "text"      : "Bombero",
+            "category"  : "oficio"
         },
         {
-            "image" : "assets/img/discrimination/lapiz.png",
-            "text"  : "Lápiz"
+            "id"        : 42,
+            "image"     : "assets/img/discrimination/lapiz.png",
+            "text"      : "Lápiz",
+            "category"  : "papeleria"
         },
         {
-            "image" : "assets/img/discrimination/automovil.png",
-            "text"  : "Automóvil"
+            "id"        : 43,
+            "image"     : "assets/img/discrimination/automovil.png",
+            "text"      : "Automóvil",
+            "category"  : "transporte"
         },
         {
-            "image" : "assets/img/discrimination/triciclo.png",
-            "text"  : "Triciclo"
+            "id"        : 44,
+            "image"     : "assets/img/discrimination/triciclo.png",
+            "text"      : "Triciclo",
+            "category"  : "transporte"
         }
     ]
 }
