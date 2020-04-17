@@ -1,0 +1,230 @@
+{
+    "activity" : "Discrimination",
+    "data" : [
+        {
+            "id"        : 0,
+            "text"      : "Arcoiris",
+            "category"  : "cielo"
+        },
+        {
+            "id"        : 1,
+            "text"      : "Automóvil",
+            "category"  : "transporte"
+        },
+        {
+            "id"        : 2,
+            "text"      : "Bicicleta",
+            "category"  : "transporte"
+        },
+        {
+            "id"        : 3,
+            "text"      : "Bombero",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 4,
+            "text"      : "Carpintero",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 5,
+            "text"      : "Estrella",
+            "category"  : "cielo"
+        },
+        {
+            "id"        : 6,
+            "text"      : "Borrador",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 7,
+            "text"      : "Bufanda",
+            "category"  : "prenda"
+        },
+        {
+            "id"        : 8,
+            "text"      : "Pantalón",
+            "category"  : "prenda"
+        },
+        {
+            "id"        : 9,
+            "text"      : "Cuchara",
+            "category"  : "cubierto"
+        },
+        {
+            "id"        : 10,
+            "text"      : "Puerta",
+            "category"  : "madera"
+        },
+        {
+            "id"        : 11,
+            "text"      : "Tenedor",
+            "category"  : "cubierto"
+        },
+        {
+            "id"        : 12,
+            "text"      : "Mesa",
+            "category"  : "madera"
+        },
+        {
+            "id"        : 13,
+            "text"      : "Hoja de papel",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 14,
+            "text"      : "Sacapuntas",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 15,
+            "text"      : "Triciclo",
+            "category"  : "transporte"
+        },
+        {
+            "id"        : 16,
+            "text"      : "Tenedor",
+            "category"  : "cubierto"
+        },
+        {
+            "id"        : 17,
+            "text"      : "Bicicleta",
+            "category"  : "transporte"
+        },
+        {
+            "id"        : 18,
+            "text"      : "Puerta",
+            "category"  : "madera"
+        },
+        {
+            "id"        : 19,
+            "text"      : "Manzana",
+            "category"  : "fruta"
+        },
+        {
+            "id"        : 20,
+            "text"      : "Piña",
+            "category"  : "fruta"
+        },
+        {
+            "id"        : 21,
+            "text"      : "Silla",
+            "category"  : "madera"
+        },
+        {
+            "id"        : 22,
+            "text"      : "Mesa",
+            "category"  : "madera"
+        },
+        {
+            "id"        : 23,
+            "text"      : "Maestra",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 24,
+            "text"      : "Cuchara",
+            "category"  : "cubierto"
+        },
+        {
+            "id"        : 25,
+            "text"      : "Lápiz",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 26,
+            "text"      : "Libreta",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 27,
+            "text"      : "Carpintero",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 28,
+            "text"      : "Zapatero",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 29,
+            "text"      : "Suéter",
+            "category"  : "prenda"
+        },
+        {
+            "id"        : 30,
+            "text"      : "Arcoiris",
+            "category"  : "cielo"
+        },
+        {
+            "id"        : 31,
+            "text"      : "Tijeras",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 32,
+            "text"      : "Hoja de papel",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 33,
+            "text"      : "Pera",
+            "category"  : "fruta"
+        },
+        {
+            "id"        : 34,
+            "text"      : "Luna",
+            "category"  : "cielo"
+        },
+        {
+            "id"        : 35,
+            "text"      : "Manzana",
+            "category"  : "fruta"
+        },
+        {
+            "id"        : 36,
+            "text"      : "Suéter",
+            "category"  : "prenda"
+        },
+        {
+            "id"        : 37,
+            "text"      : "Bufanda",
+            "category"  : "prenda"
+        },
+        {
+            "id"        : 38,
+            "text"      : "Hoja de papel",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 39,
+            "text"      : "Maestra",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 40,
+            "text"      : "Mesa",
+            "category"  : "madera"
+        },
+        {
+            "id"        : 41,
+            "text"      : "Bombero",
+            "category"  : "oficio"
+        },
+        {
+            "id"        : 42,
+            "text"      : "Lápiz",
+            "category"  : "papeleria"
+        },
+        {
+            "id"        : 43,
+            "text"      : "Automóvil",
+            "category"  : "transporte"
+        },
+        {
+            "id"        : 44,
+            "text"      : "Triciclo",
+            "category"  : "transporte"
+        }
+    ]
+}
