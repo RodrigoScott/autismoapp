@@ -1,21 +1,499 @@
 {
     "activity" : "Sound",
     "data" : [
+        {   "id"    : 0,
+            "text"  : "Bota",
+            "sound" : "sound/sound/bota.mp3"
+        },
         {
+            "id"    : 1,
+            "text"  : "Gota",
+            "sound" : "sound/sound/gota.mp3"
+        },
+        {
+            "id"    : 2,
             "text"  : "Vas",
-            "sound" : "soundImitate/elefante.mp3"
+            "sound" : "sound/sound/vas.mp3"
         },
         {
+            "id"    : 3,
             "text"  : "Gas",
-            "sound" : "soundImitate/elefante.mp3"
+            "sound" : "sound/sound/gas.mp3"
         },
         {
-            "text"  : "Iban",
-            "sound" : "soundImitate/elefante.mp3"
+            "id"    : 4,
+            "text"  : "Muela",
+            "sound" : "sound/sound/muela.mp3"
         },
         {
-            "text"  : "Iban",
-            "sound" : "soundImitate/elefante.mp3"
+            "id"    : 5,
+            "text"  : "Muela",
+            "sound" : "sound/sound/muela.mp3"
+        },
+
+        {
+            "id"    : 6,
+            "text"  : "Lago",
+            "sound" : "sound/sound/lago.mp3"
+        },
+        {
+            "id"    : 7,
+            "text"  : "Lavo",
+            "sound" : "sound/sound/lavo.mp3"
+        },
+        {
+            "id"    : 8,
+            "text"  : "Foca",
+            "sound" : "sound/sound/foca.mp3"
+        },
+        {
+            "id"    : 9,
+            "text"  : "Foco",
+            "sound" : "sound/sound/foco.mp3"
+        },
+        {
+            "id"    : 10,
+            "text"  : "Lobo",
+            "sound" : "sound/sound/lobo.mp3"
+        },
+        {
+            "id"    : 11,
+            "text"  : "Globo",
+            "sound" : "sound/sound/globo.mp3"
+        },
+
+        {
+            "id"    : 12,
+            "text"  : "Niña",
+            "sound" : "sound/sound/niña.mp3"
+        },
+        {
+            "id"    : 13,
+            "text"  : "Piña",
+            "sound" : "sound/sound/piña.mp3"
+        },
+        {
+            "id"    : 14,
+            "text"  : "Mira",
+            "sound" : "sound/sound/mira.mp3"
+        },
+        {
+            "id"    : 15,
+            "text"  : "Mira",
+            "sound" : "sound/sound/mira.mp3"
+        },
+        {
+            "id"    : 16,
+            "text"  : "Ratón",
+            "sound" : "sound/sound/ratón.mp3"
+        },
+        {
+            "id"    : 17,
+            "text"  : "Botón",
+            "sound" : "sound/sound/botón.mp3"
+        },
+
+        {
+            "id"    : 18,
+            "text"  : "Van",
+            "sound" : "sound/sound/van.mp3"
+        },
+        {
+            "id"    : 19,
+            "text"  : "Van",
+            "sound" : "sound/sound/van.mp3"
+        },
+        {
+            "id"    : 20,
+            "text"  : "Dan",
+            "sound" : "sound/sound/dan.mp3"
+        },
+        {
+            "id"    : 21,
+            "text"  : "Dan",
+            "sound" : "sound/sound/dan.mp3"
+        },
+        {
+            "id"    : 22,
+            "text"  : "Masa",
+            "sound" : "sound/sound/masa.mp3"
+        },
+        {
+            "id"    : 23,
+            "text"  : "Mesa",
+            "sound" : "sound/sound/mesa.mp3"
+        },
+
+        {
+            "id"    : 24,
+            "text"  : "Mira",
+            "sound" : "sound/sound/mira.mp3"
+        },
+        {
+            "id"    : 25,
+            "text"  : "Mina",
+            "sound" : "sound/sound/mina.mp3"
+        },
+        {
+            "id"    : 26,
+            "text"  : "Mula",
+            "sound" : "sound/sound/mula.mp3"
+        },
+        {
+            "id"    : 27,
+            "text"  : "Muda",
+            "sound" : "sound/sound/muda.mp3"
+        },
+        {
+            "id"    : 28,
+            "text"  : "Loma",
+            "sound" : "sound/sound/loma.mp3"
+        },
+        {
+            "id"    : 29,
+            "text"  : "Loma",
+            "sound" : "sound/sound/loma.mp3"
+        },
+
+        {
+            "id"    : 30,
+            "text"  : "Mudo",
+            "sound" : "sound/sound/mudo.mp3"
+        },
+        {
+            "id"    : 31,
+            "text"  : "Nudo",
+            "sound" : "sound/sound/nudo.mp3"
+        },
+        {
+            "id"    : 32,
+            "text"  : "Dedo",
+            "sound" : "sound/sound/dedo.mp3"
+        },
+        {
+            "id"    : 33,
+            "text"  : "Dado",
+            "sound" : "sound/sound/dado.mp3"
+        },
+        {
+            "id"    : 34,
+            "text"  : "Debo",
+            "sound" : "sound/sound/debo.mp3"
+        },
+        {
+            "id"    : 35,
+            "text"  : "Bebo",
+            "sound" : "sound/sound/bebo.mp3"
+        },
+
+        {
+            "id"    : 36,
+            "text"  : "Loma",
+            "sound" : "sound/sound/loma.mp3"
+        },
+        {
+            "id"    : 37,
+            "text"  : "Loma",
+            "sound" : "sound/sound/loma.mp3"
+        },
+        {
+            "id"    : 38,
+            "text"  : "Lona",
+            "sound" : "sound/sound/lona.mp3"
+        },
+        {
+            "id"    : 39,
+            "text"  : "Lona",
+            "sound" : "sound/sound/lona.mp3"
+        },
+        {
+            "id"    : 40,
+            "text"  : "Bata",
+            "sound" : "sound/sound/bata.mp3"
+        },
+        {
+            "id"    : 41,
+            "text"  : "Pata",
+            "sound" : "sound/sound/pata.mp3"
+        },
+
+        {
+            "id"    : 42,
+            "text"  : "Collar",
+            "sound" : "sound/sound/collar.mp3"
+        },
+        {
+            "id"    : 43,
+            "text"  : "Callar",
+            "sound" : "sound/sound/callar.mp3"
+        },
+        {
+            "id"    : 44,
+            "text"  : "Pala",
+            "sound" : "sound/sound/pala.mp3"
+        },
+        {
+            "id"    : 45,
+            "text"  : "Palo",
+            "sound" : "sound/sound/palo.mp3"
+        },
+        {
+            "id"    : 46,
+            "text"  : "Gorro",
+            "sound" : "sound/sound/gorro.mp3"
+        },
+        {
+            "id"    : 47,
+            "text"  : "Corro",
+            "sound" : "sound/sound/corro.mp3"
+        },
+        
+        {
+            "id"    : 48,
+            "text"  : "Plato",
+            "sound" : "sound/sound/plato.mp3"
+        },
+        {
+            "id"    : 49,
+            "text"  : "Plato",
+            "sound" : "sound/sound/plato.mp3"
+        },
+        {
+            "id"    : 50,
+            "text"  : "Mesa",
+            "sound" : "sound/sound/mesa.mp3"
+        },
+        {
+            "id"    : 51,
+            "text"  : "Pesa",
+            "sound" : "sound/sound/pesa.mp3"
+        },
+        {
+            "id"    : 52,
+            "text"  : "Vuela",
+            "sound" : "sound/sound/vuela.mp3"
+        },
+        {
+            "id"    : 53,
+            "text"  : "Muela",
+            "sound" : "sound/sound/muela.mp3"
+        },
+
+        {
+            "id"    : 54,
+            "text"  : "Bala",
+            "sound" : "sound/sound/bala.mp3"
+        },
+        {
+            "id"    : 55,
+            "text"  : "Pala",
+            "sound" : "sound/sound/pala.mp3"
+        },
+        {
+            "id"    : 56,
+            "text"  : "Hora",
+            "sound" : "sound/sound/hora.mp3"
+        },
+        {
+            "id"    : 57,
+            "text"  : "Ola",
+            "sound" : "sound/sound/ola.mp3"
+        },
+        {
+            "id"    : 58,
+            "text"  : "Loro",
+            "sound" : "sound/sound/loro.mp3"
+        },
+        {
+            "id"    : 59,
+            "text"  : "Loro",
+            "sound" : "sound/sound/loro.mp3"
+        },
+        
+        {
+            "id"    : 60,
+            "text"  : "Dos",
+            "sound" : "sound/sound/dos.mp3"
+        },
+        {
+            "id"    : 61,
+            "text"  : "Tos",
+            "sound" : "sound/sound/tos.mp3"
+        },
+        {
+            "id"    : 62,
+            "text"  : "Vino",
+            "sound" : "sound/sound/vino.mp3"
+        },
+        {
+            "id"    : 63,
+            "text"  : "Pino",
+            "sound" : "sound/sound/pino.mp3"
+        },
+        {
+            "id"    : 64,
+            "text"  : "Fuente",
+            "sound" : "sound/sound/fuente.mp3"
+        },
+        {
+            "id"    : 65,
+            "text"  : "Puente",
+            "sound" : "sound/sound/puente.mp3"
+        },
+
+        {
+            "id"    : 66,
+            "text"  : "Mono",
+            "sound" : "sound/sound/mono.mp3"
+        },
+        {
+            "id"    : 67,
+            "text"  : "Mono",
+            "sound" : "sound/sound/mono.mp3"
+        },
+        {
+            "id"    : 68,
+            "text"  : "Globo",
+            "sound" : "sound/sound/globo.mp3"
+        },
+        {
+            "id"    : 69,
+            "text"  : "Globo",
+            "sound" : "sound/sound/globo.mp3"
+        },
+        {
+            "id"    : 70,
+            "text"  : "Mira",
+            "sound" : "sound/sound/mira.mp3"
+        },
+        {
+            "id"    : 71,
+            "text"  : "Mira",
+            "sound" : "sound/sound/mira.mp3"
+        },
+
+        {
+            "id"    : 72,
+            "text"  : "Loro",
+            "sound" : "sound/sound/loro.mp3"
+        },
+        {
+            "id"    : 73,
+            "text"  : "Toro",
+            "sound" : "sound/sound/toro.mp3"
+        },
+        {
+            "id"    : 74,
+            "text"  : "Barco",
+            "sound" : "sound/sound/barco.mp3"
+        },
+        {
+            "id"    : 75,
+            "text"  : "Barco",
+            "sound" : "sound/sound/barco.mp3"
+        },
+        {
+            "id"    : 76,
+            "text"  : "Flecha",
+            "sound" : "sound/sound/flecha.mp3"
+        },
+        {
+            "id"    : 77,
+            "text"  : "Flecha",
+            "sound" : "sound/sound/flecha.mp3"
+        },
+
+        {
+            "id"    : 78,
+            "text"  : "Besa",
+            "sound" : "sound/sound/besa.mp3"
+        },
+        {
+            "id"    : 79,
+            "text"  : "Besa",
+            "sound" : "sound/sound/besa.mp3"
+        },
+        {
+            "id"    : 80,
+            "text"  : "Borra",
+            "sound" : "sound/sound/borra.mp3"
+        },
+        {
+            "id"    : 81,
+            "text"  : "Gorra",
+            "sound" : "sound/sound/gorra.mp3"
+        },
+        {
+            "id"    : 82,
+            "text"  : "Par",
+            "sound" : "sound/sound/bar.mp3"
+        },
+        {
+            "id"    : 83,
+            "text"  : "Bar",
+            "sound" : "sound/sound/bar.mp3"
+        },
+
+        {
+            "id"    : 84,
+            "text"  : "Mono",
+            "sound" : "sound/sound/mono.mp3"
+        },
+        {
+            "id"    : 85,
+            "text"  : "Mano",
+            "sound" : "sound/sound/mano.mp3"
+        },
+        {
+            "id"    : 86,
+            "text"  : "Fecha",
+            "sound" : "sound/sound/fecha.mp3"
+        },
+        {
+            "id"    : 87,
+            "text"  : "Flecha",
+            "sound" : "sound/sound/flecha.mp3"
+        },
+        {
+            "id"    : 88,
+            "text"  : "Blanco",
+            "sound" : "sound/sound/blanco.mp3"
+        },
+        {
+            "id"    : 89,
+            "text"  : "Barco",
+            "sound" : "sound/sound/barco.mp3"
+        },
+
+        {
+            "id"    : 90,
+            "text"  : "Collar",
+            "sound" : "sound/sound/collar.mp3"
+        },
+        {
+            "id"    : 91,
+            "text"  : "Collar",
+            "sound" : "sound/sound/collar.mp3"
+        },
+        {
+            "id"    : 92,
+            "text"  : "Fuente",
+            "sound" : "sound/sound/fuente.mp3"
+        },
+        {
+            "id"    : 93,
+            "text"  : "Fuente",
+            "sound" : "sound/sound/fuente.mp3"
+        },
+        {
+            "id"    : 94,
+            "text"  : "Foca",
+            "sound" : "sound/sound/foca.mp3"
+        },
+        {
+            "id"    : 95,
+            "text"  : "Foco",
+            "sound" : "sound/sound/foco.mp3"
         }
     ]
 }
