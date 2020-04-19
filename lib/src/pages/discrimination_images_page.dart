@@ -23,7 +23,7 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-            onPressed: () => _show(context)
+            onPressed: () {}
           )
         ),
     );
@@ -49,17 +49,19 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
 
   List<Widget> _dataItems( List<dynamic> db){
     final List<Widget> items=[];
-
+    
     db.sublist(_start,_end).forEach((opt){
-      final widgetTemp=_buildContainer(opt['image'], opt['text']);
+      final widgetTemp=_buildContainer(opt['id'],opt['image'], opt['text']);
       items..add(widgetTemp);
     });
     return items;
+    
   }
 
-  Widget _buildContainer(String image, String text) {
+  Widget _buildContainer(int id, String image, String text) {
     return ClipRect(
       child: Container(
+        key: ObjectKey(id),
         height: 180.0,
         width: 150.0,
         margin: EdgeInsets.all(5.0),
@@ -97,6 +99,7 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
               _colorBorder=Color.fromRGBO(149, 162, 244,1.0);
               _widthBorder=7.0;
             });
+            print(id);
           },
         ),
       ),
@@ -115,4 +118,5 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
       }
     });
   }
+
 }

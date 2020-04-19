@@ -1,3 +1,4 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 import 'package:autismoapp/src/providers/sound_provider.dart';
 
@@ -19,7 +20,7 @@ class _SoundPageState extends State<SoundPage> {
       ),
       body: _data(),
       floatingActionButton: Visibility( 
-          //visible: _isVisible,
+          visible: _isVisible,
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
@@ -34,12 +35,22 @@ class _SoundPageState extends State<SoundPage> {
       future: soundProvider.loadData(),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
-        return Padding(
+
+        if(snapshot.hasData){
+          return Padding(
           padding: EdgeInsets.only(top:60.0,left: 10.0),
           child: Column(
             children: _dataItems(snapshot.data)
           ),
         );
+        }else{
+          return Container(
+            height: 400.0,
+            child: Center(
+              child: CircularProgressIndicator()
+              )
+            );
+        }
       },
     );
   }
@@ -69,7 +80,10 @@ class _SoundPageState extends State<SoundPage> {
                   Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
                 ],
               ),
-              onPressed: (){},
+              onPressed: (){
+                AudioCache player = AudioCache();
+                player.play(sound);
+              },
             )
           ),
           Spacer(flex: 2),
@@ -123,7 +137,7 @@ class _SoundPageState extends State<SoundPage> {
       _start+=3;
       _end+=3;
       
-      if(_end==36){
+      if(_end==95){
         _isVisible = !_isVisible;
       }
     });

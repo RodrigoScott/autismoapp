@@ -48,6 +48,7 @@ flutter:
    - assets/img/imitate/
    - assets/sound/imitate/
    - data/sound.json
+   - assets/sound/sound/
    - assets/img/discrimination/
    - data/discrimination_images.json
    - assets/animation/bad/

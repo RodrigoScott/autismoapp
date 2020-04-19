@@ -35,7 +35,7 @@ class _AnimationGoodPageState extends State<AnimationGoodPage> {
   List<Widget> _dataItems( List<dynamic> db){
     final List<Widget> items=[];
 
-    db..sublist(_start,_end).forEach((opt){
+    db..sublist(0,1).forEach((opt){
       final widgetTemp=_createAnimation(opt['image'], opt['sound']);
       items..add(widgetTemp);
     });
@@ -44,7 +44,7 @@ class _AnimationGoodPageState extends State<AnimationGoodPage> {
 
   Widget _createAnimation(String image, String sound){
 
-    _sound(sound);
+    //_sound(sound);
 
     _player.play(sound);
     
