@@ -1,4 +1,5 @@
 import 'package:autismoapp/src/providers/discrimination_images_provider.dart';
+import 'package:autismoapp/src/widgets/discrimination_image_item.dart';
 import 'package:flutter/material.dart';
 
 class DiscriminationImagesPage extends StatefulWidget {
@@ -51,59 +52,15 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
     final List<Widget> items=[];
     
     db.sublist(_start,_end).forEach((opt){
-      final widgetTemp=_buildContainer(opt['id'],opt['image'], opt['text']);
+      final widgetTemp = DiscriminationImageItem(
+        id: opt['id'],
+        image: Image.asset(opt['image']), 
+        title: opt['text']
+      );
       items..add(widgetTemp);
     });
     return items;
     
-  }
-
-  Widget _buildContainer(int id, String image, String text) {
-    return ClipRect(
-      child: Container(
-        key: ObjectKey(id),
-        height: 180.0,
-        width: 150.0,
-        margin: EdgeInsets.all(5.0),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15.0),
-          border: Border.all(
-            color: _colorBorder,
-            width: _widthBorder,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.1),
-              spreadRadius: 2,
-              blurRadius: 5,
-              offset: Offset(0, 3)
-            ),
-          ],
-        ),
-        child: FlatButton(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Container(
-                child: Image.asset(image),
-                height: 120.0,
-              ),
-              SizedBox(height: 5.0),
-              Text(text, style: TextStyle(color: Colors.black, fontSize: 18.0)),
-              SizedBox(height: 5.0),
-            ],
-          ),
-          onPressed: (){
-            setState(() {
-              _colorBorder=Color.fromRGBO(149, 162, 244,1.0);
-              _widthBorder=7.0;
-            });
-            print(id);
-          },
-        ),
-      ),
-    );
   }
 
   void _show(BuildContext context){
