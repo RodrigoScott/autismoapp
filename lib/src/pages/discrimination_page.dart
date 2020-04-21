@@ -11,14 +11,14 @@ class _DiscriminationPageState extends State<DiscriminationPage> {
   Color _color=Color.fromRGBO(149, 162, 244,0.7);
   int _start=0;
   int _end=3;
-  bool _isVisible = true;
+  bool _visible = true;
 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:Text('Discriminación de conjuntos')),
       body: _data(),
       floatingActionButton: Visibility( 
-          visible: _isVisible,
+          visible: _visible,
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
@@ -106,7 +106,7 @@ class _DiscriminationPageState extends State<DiscriminationPage> {
       _end+=3;
       
       if(_end==45){
-        _isVisible = !_isVisible;
+        _visible = !_visible;
       }
     });
   }

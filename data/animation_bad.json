@@ -12,10 +12,6 @@
         {
             "text"  : "Iban",
             "sound" : "soundImitate/elefante.mp3"
-        },
-        {
-            "text"  : "Iban",
-            "sound" : "soundImitate/elefante.mp3"
         }
     ]
 }

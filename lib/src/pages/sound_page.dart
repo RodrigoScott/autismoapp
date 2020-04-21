@@ -11,7 +11,8 @@ class _SoundPageState extends State<SoundPage> {
 
   int _start=0;
   int _end=3;
-  bool _isVisible = true;
+  bool _visible = true;
+  AudioCache player = AudioCache();
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,11 +21,11 @@ class _SoundPageState extends State<SoundPage> {
       ),
       body: _data(),
       floatingActionButton: Visibility( 
-          visible: _isVisible,
+          visible: _visible,
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-            onPressed: () => _show(context)
+            onPressed: () => _nextButton(context)
           )
         ),
     );
@@ -59,13 +60,13 @@ class _SoundPageState extends State<SoundPage> {
     final List<Widget> items=[];
     
     db.sublist(_start,_end).forEach((opt){
-      final widgetTemp= _createButtons(opt['text'], opt['sound']);
+      final widgetTemp= _build(opt['title'], opt['voice']);
       items..add(widgetTemp);
     }); 
     return items;
   }
 
-  Widget _createButtons(String text, String sound){
+  Widget _build(String title, String voice){
     return Container(
       padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
       child: Row(
@@ -77,12 +78,11 @@ class _SoundPageState extends State<SoundPage> {
               child: Row(
                 children: <Widget>[
                   Icon(Icons.volume_up),
-                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
+                  Text(title, textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
                 ],
               ),
               onPressed: (){
-                AudioCache player = AudioCache();
-                player.play(sound);
+                player.play(voice);
               },
             )
           ),
@@ -122,7 +122,7 @@ class _SoundPageState extends State<SoundPage> {
               child: Row(
                 children: <Widget>[
                   Icon(Icons.volume_up),
-                  Text(text, textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
+                  Text(title, textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
                 ],
               ),
               onPressed: (){},
@@ -132,13 +132,13 @@ class _SoundPageState extends State<SoundPage> {
       )
     );
   }
-  void _show(BuildContext context){
+  void _nextButton(BuildContext context){
     setState(() {
       _start+=3;
       _end+=3;
       
       if(_end==95){
-        _isVisible = !_isVisible;
+        _visible = !_visible;
       }
     });
   }

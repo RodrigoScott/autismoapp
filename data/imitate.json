@@ -3,182 +3,182 @@
     "data" : [
         {
             "image" : "assets/img/imitate/elefante.png",
-            "text"  : "Elefante",
+            "title"  : "Elefante",
             "sound" : "sound/imitate/elefante.mp3"
         },
         {
             "image" : "assets/img/imitate/pollito.png",
-            "text" : "Pollito",
+            "title" : "Pollito",
             "sound" : "sound/imitate/pollito.mp3"
         },
         {
             "image" : "assets/img/imitate/perro.png",
-            "text" : "Perro",
+            "title" : "Perro",
             "sound" : "sound/imitate/perro.mp3"
         },
         {
             "image" : "assets/img/imitate/cerdo.png",
-            "text" : "Cerdo",
+            "title" : "Cerdo",
             "sound" : "sound/imitate/cerdo.mp3"
         },
         {
             "image" : "assets/img/imitate/pato.png",
-            "text" : "Pato",
+            "title" : "Pato",
             "sound" : "sound/imitate/pato.mp3"
         },
         {
             "image" : "assets/img/imitate/gallo.png",
-            "text" : "Gallo",
+            "title" : "Gallo",
             "sound" : "sound/imitate/gallo.mp3"
         },
         {
             "image" : "assets/img/imitate/leon.png",
-            "text" : "León",
+            "title" : "León",
             "sound" : "sound/imitate/leon.mp3"
         },
         {
             "image" : "assets/img/imitate/lobo.png",
-            "text" : "Lobo",
+            "title" : "Lobo",
             "sound" : "sound/imitate/lobo.mp3"
         },
         {
             "image" : "assets/img/imitate/rana.png",
-            "text" : "Rana",
+            "title" : "Rana",
             "sound" : "sound/imitate/rana.mp3"
         },
         {
             "image" : "assets/img/imitate/vaca.png",
-            "text" : "Vaca",
+            "title" : "Vaca",
             "sound" : "sound/imitate/vaca.mp3"
         },
         {
             "image" : "assets/img/imitate/gato.png",
-            "text" : "Gato",
+            "title" : "Gato",
             "sound" : "sound/imitate/gato.mp3"
         },
         {
             "image" : "assets/img/imitate/caballo.png",
-            "text" : "Caballo",
+            "title" : "Caballo",
             "sound" : "sound/imitate/caballo.mp3"
         },
         {
             "image" : "assets/img/imitate/buho.png",
-            "text" : "Búho",
+            "title" : "Búho",
             "sound" : "sound/imitate/buho.mp3"
         },
         {
             "image" : "assets/img/imitate/burro.png",
-            "text" : "Burro",
+            "title" : "Burro",
             "sound" : "sound/imitate/burro.mp3"
         },
         {
             "image" : "assets/img/imitate/mono.png",
-            "text" : "Mono",
+            "title" : "Mono",
             "sound" : "sound/imitate/mono.mp3"
         },
         {
             "image" : "assets/img/imitate/serpiente.png",
-            "text" : "Serpiente",
+            "title" : "Serpiente",
             "sound" : "sound/imitate/serpiente.mp3"
         },
         {
             "image" : "assets/img/imitate/oveja.png",
-            "text" : "Oveja",
+            "title" : "Oveja",
             "sound" : "sound/imitate/oveja.mp3"
         },
         {
             "image" : "assets/img/imitate/trompeta.png",
-            "text" : "Trompeta",
+            "title" : "Trompeta",
             "sound" : "sound/imitate/trompeta.mp3"
         },
         {
             "image" : "assets/img/imitate/tambor.png",
-            "text" : "Tambor",
+            "title" : "Tambor",
             "sound" : "sound/imitate/tambor.mp3"
         },
         {
             "image" : "assets/img/imitate/ambulancia.png",
-            "text" : "Ambulancia",
+            "title" : "Ambulancia",
             "sound" : "sound/imitate/ambulancia.mp3"
         },
         {
             "image" : "assets/img/imitate/bomberos.png",
-            "text" : "Bomberos",
+            "title" : "Bomberos",
             "sound" : "sound/imitate/bomberos.mp3"
         },
         {
             "image" : "assets/img/imitate/moto.png",
-            "text" : "Motocicleta",
+            "title" : "Motocicleta",
             "sound" : "sound/imitate/moto.mp3"
         },
         {
             "image" : "assets/img/imitate/tren.png",
-            "text" : "Tren",
+            "title" : "Tren",
             "sound" : "sound/imitate/tren.mp3"
         },
         {
             "image" : "assets/img/imitate/beso.png",
-            "text" : "Beso",
+            "title" : "Beso",
             "sound" : "sound/imitate/beso.mp3"
         },
         {
             "image" : "assets/img/imitate/bostezar.png",
-            "text" : "Bostezar",
+            "title" : "Bostezar",
             "sound" : "sound/imitate/bostezo.mp3"
         },
         {
             "image" : "assets/img/imitate/callar.png",
-            "text" : "Silencio",
+            "title" : "Silencio",
             "sound" : "sound/imitate/callar.mp3"
         },
         {
             "image" : "assets/img/imitate/gritar.png",
-            "text" : "Gritar",
+            "title" : "Gritar",
             "sound" : "sound/imitate/grito.mp3"
         },
         {
             "image" : "assets/img/imitate/tose.png",
-            "text" : "Toser",
+            "title" : "Toser",
             "sound" : "sound/imitate/tos.mp3"
         },
         {
             "image" : "assets/img/imitate/risas.png",
-            "text" : "Risas",
+            "title" : "Risas",
             "sound" : "sound/imitate/risas.mp3"
         },
         {
             "image" : "assets/img/imitate/llorar.png",
-            "text" : "Llorar",
+            "title" : "Llorar",
             "sound" : "sound/imitate/llanto.mp3"
         },
         {
             "image" : "assets/img/imitate/silbar.png",
-            "text" : "Silbar",
+            "title" : "Silbar",
             "sound" : "sound/imitate/silbar.mp3"
         },
         {
             "image" : "assets/img/imitate/soplar.png",
-            "text" : "Soplar",
+            "title" : "Soplar",
             "sound" : "sound/imitate/soplar.mp3"
         },
         {
             "image" : "assets/img/imitate/viento.png",
-            "text" : "Viento",
+            "title" : "Viento",
             "sound" : "sound/imitate/viento.mp3"
         },
         {
             "image" : "assets/img/imitate/bomba.png",
-            "text" : "Explosión de bomba",
+            "title" : "Explosión de bomba",
             "sound" : "sound/imitate/bomba.mp3"
         },
         {
             "image" : "assets/img/imitate/telefono.png",
-            "text" : "Teléfono",
+            "title" : "Teléfono",
             "sound" : "sound/imitate/telefono.mp3"
         },
         {
             "image" : "assets/img/imitate/despertador.png",
-            "text" : "Despertador",
+            "title" : "Despertador",
             "sound" : "sound/imitate/despertador.mp3"
         }
         

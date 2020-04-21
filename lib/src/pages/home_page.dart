@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
     data.forEach((opt){
       
       final widgetTemp=ListTile(
-        title: Text(opt['text']),
+        title: Text(opt['title']),
         leading: getIcon(opt['icon']),
         trailing: Icon(Icons.keyboard_arrow_right, color: Colors.lightGreen),
         onTap: (){
@@ -48,7 +48,6 @@ class HomePage extends StatelessWidget {
           if (opt['route']=='discrimination'){
             _showAlert(context);
           }
-
         },
       );
 
@@ -66,7 +65,6 @@ class HomePage extends StatelessWidget {
       builder: (context){
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-          //title: Text('Selecciona cómo se llevará a cabo la siguiente actividad:'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[

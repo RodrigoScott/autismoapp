@@ -4,17 +4,17 @@
         {
             "route" : "sound",
             "icon" : "hearing",
-            "text": "Escucha el sonido diferente"
+            "title": "Escucha el sonido diferente"
         },
         {
             "route" : "imitate",
             "icon" : "voice",
-            "text": "Imita el sonido"
+            "title": "Imita el sonido"
         },
         {
             "route" : "discrimination",
             "icon" : "widgets",
-            "text": "Discriminación de conjuntos"
+            "title": "Discriminación de conjuntos"
         }
         
     ]

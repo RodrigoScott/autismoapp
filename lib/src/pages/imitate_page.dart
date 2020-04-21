@@ -12,7 +12,8 @@ class _ImitatePageState extends State<ImitatePage> {
 
   int _start=0;
   int _end=4;
-  bool _isVisible = true;
+  bool _visible = true;
+  AudioCache player = AudioCache();
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,11 +22,11 @@ class _ImitatePageState extends State<ImitatePage> {
       ),
       body:_data(),
       floatingActionButton: Visibility( 
-        visible: _isVisible,
+        visible: _visible,
         child: FloatingActionButton(
           child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
           backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-          onPressed: () => _show(context)
+          onPressed: () => _nextButton(context)
         )
       ),
     );
@@ -53,13 +54,13 @@ class _ImitatePageState extends State<ImitatePage> {
     final List<Widget> items=[];
 
     db.sublist(_start,_end).forEach((opt){
-      final widgetTemp=_createButtons(opt['text'], opt['image'], opt['sound']);
+      final widgetTemp=_build(opt['title'], opt['image'], opt['sound']);
       items..add(widgetTemp);
     });
     return items;
   }
 
-  Widget _createButtons(String text, String image, String sound){
+  Widget _build(String title, String image, String sound){
     return ClipRect(
       child: Container(
         height: 170.0,
@@ -91,12 +92,11 @@ class _ImitatePageState extends State<ImitatePage> {
                 height: 100.0,
               ),
               SizedBox(height: 2.0),
-              Text(text, style: TextStyle(color: Colors.black)),
+              Text(title, style: TextStyle(color: Colors.black)),
               SizedBox(height: 3.0),
             ],
           ),
           onPressed: (){
-            AudioCache player = AudioCache();
             player.play(sound);
           },
         ),
@@ -104,13 +104,13 @@ class _ImitatePageState extends State<ImitatePage> {
     );
   }
 
-  void _show(BuildContext context){
+  void _nextButton(BuildContext context){
     setState(() {
       _start+=4;
       _end+=4;
       
       if(_end==36){
-        _isVisible = !_isVisible;
+        _visible = !_visible;
       }
     });
   }
