@@ -1,3 +1,4 @@
+import 'package:autismoapp/src/providers/discrimination_provider.dart';
 import 'package:flutter/material.dart';
 
 class DiscriminationPage extends StatefulWidget {
@@ -8,32 +9,61 @@ class DiscriminationPage extends StatefulWidget {
 class _DiscriminationPageState extends State<DiscriminationPage> {
 
   Color _color=Color.fromRGBO(149, 162, 244,0.7);
+  int _start=0;
+  int _end=3;
+  bool _isVisible = true;
 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:Text('Discriminación de conjuntos')),
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            SizedBox(height: 60.0),
-            _buildContainer('Arcoiris'),
-            _buildContainer('Automóvil'),
-            _buildContainer('Bicicleta'),
-          ],
-        ),
-      ),
+      body: _data(),
       floatingActionButton: Visibility( 
-          //visible: _isVisible,
+          visible: _isVisible,
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-            onPressed: () => {}
+            onPressed: () => _nextButton(context)
           )
         ),
     );
   }
 
-  Widget _buildContainer(String text) {
+  Widget _data() {
+    return FutureBuilder(
+      future: discriminationProvider.loadData(),
+      initialData: [],
+      builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
+
+        if(snapshot.hasData){
+          return Padding(
+          padding: EdgeInsets.only(top:60.0,left: 60.0),
+          child: Column(
+            children: _dataItems(snapshot.data)
+          ),
+        );
+        }else{
+          return Container(
+            height: 400.0,
+            child: Center(
+              child: CircularProgressIndicator()
+              )
+            );
+        }
+      },
+    );
+  }
+
+  List<Widget> _dataItems( List<dynamic> db){
+    final List<Widget> items=[];
+    
+    db.sublist(_start,_end).forEach((opt){
+      final widgetTemp= _build(opt['title']);
+      items..add(widgetTemp);
+    }); 
+    return items;
+  }
+
+  Widget _build(String title) {
     return ClipRect(
       child: Container(
         height: 60.0,
@@ -56,7 +86,7 @@ class _DiscriminationPageState extends State<DiscriminationPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(height: 5.0),
-              Text(text, style: TextStyle(color: Colors.black, fontSize: 22.0)),
+              Text(title, style: TextStyle(color: Colors.black, fontSize: 22.0)),
               SizedBox(height: 5.0),
             ],
           ),
@@ -68,5 +98,16 @@ class _DiscriminationPageState extends State<DiscriminationPage> {
         ),
       ),
     );
+  }
+
+  void _nextButton(BuildContext context){
+    setState(() {
+      _start+=3;
+      _end+=3;
+      
+      if(_end==45){
+        _isVisible = !_isVisible;
+      }
+    });
   }
 }

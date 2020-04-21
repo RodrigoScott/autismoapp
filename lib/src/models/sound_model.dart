@@ -14,11 +14,11 @@ class Sound{
     List<Sound> sounds = [];
 
     final jsonResponse = json.decode('data/sound.json');
-    final sounds = new Sound.fromJson(jsonResponse);
+    //final sounds = new Sound.fromJson(jsonResponse);
 
     for(Sound sound in sounds){
       sounds.add(sound);
     }
-    return sounds;
+    //return sounds;
   }
 }

@@ -50,6 +50,7 @@ flutter:
    - data/sound.json
    - assets/sound/sound/
    - assets/img/discrimination/
+   - data/discrimination.json
    - data/discrimination_images.json
    - assets/animation/bad/
    - data/animation_bad.json
