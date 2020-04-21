@@ -1,5 +1,7 @@
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
+import 'dart:async' show Future;
+import 'package:autismoapp/src/models/sound_model.dart';
 
 class _SoundProvider{
   
@@ -7,13 +9,14 @@ class _SoundProvider{
 
   _SoundProvider();
 
-  Future<List<dynamic>> loadData() async {
-    final resp=await rootBundle.loadString('data/sound.json');
+  Future<List<Sound>> loadData() async {
 
-    Map dataMap=json.decode(resp);
-    db=dataMap['data'];
-    
-    return db;
+    final jsonString=await rootBundle.loadString('data/sound.json');
+    final jsonResponse = json.decode(jsonString);
+    final sound = new Sound.fromJson(jsonResponse);
+    print(sound.id);
+
+    return [];
   }
 
 }
