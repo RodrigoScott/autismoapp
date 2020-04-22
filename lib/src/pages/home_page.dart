@@ -21,7 +21,6 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _list() {
-
     return FutureBuilder(
       future: menuProvider.loadData(),
       initialData: [],
@@ -37,7 +36,6 @@ class HomePage extends StatelessWidget {
     final List<Widget> options=[];
 
     data.forEach((opt){
-      
       final widgetTemp=ListTile(
         title: Text(opt['title']),
         leading: getIcon(opt['icon']),
@@ -50,10 +48,8 @@ class HomePage extends StatelessWidget {
           }
         },
       );
-
       options..add(widgetTemp)
-              ..add(Divider());
-
+             ..add(Divider());
     }); 
     return options;
   }
@@ -111,5 +107,4 @@ class HomePage extends StatelessWidget {
       }
     );
   }
-
 }

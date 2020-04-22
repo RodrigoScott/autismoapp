@@ -22,7 +22,7 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
           child: FloatingActionButton(
             child: Icon(Icons.navigate_next, color: Colors.white, size: 40.0),
             backgroundColor: Color.fromRGBO(242, 126, 142, 1.0),
-            onPressed: () {}
+            onPressed: () => _nextButton(context)
           )
         ),
     );
@@ -63,7 +63,7 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
 
   void _nextButton(BuildContext context){
     setState(() {
-      Navigator.pushNamed(context, 'animationGood');
+      //Navigator.pushNamed(context, 'animationGood');
       
       _start+=3;
       _end+=3;

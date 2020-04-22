@@ -72,12 +72,4 @@ class _AnimationGoodPageState extends State<AnimationGoodPage> {
       }
     });
   }
-
-  Widget streamSample(context, AsyncSnapshot<List<dynamic>> snapshot) {
-    if (snapshot.hasData) {
-      return Text("Success");
-    } else {
-      return Container();
-    }
-  }
 }

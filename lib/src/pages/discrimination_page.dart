@@ -1,4 +1,5 @@
 import 'package:autismoapp/src/providers/discrimination_provider.dart';
+import 'package:autismoapp/src/widgets/discrimination_item.dart';
 import 'package:flutter/material.dart';
 
 class DiscriminationPage extends StatefulWidget {
@@ -8,7 +9,6 @@ class DiscriminationPage extends StatefulWidget {
 
 class _DiscriminationPageState extends State<DiscriminationPage> {
 
-  Color _color=Color.fromRGBO(149, 162, 244,0.7);
   int _start=0;
   int _end=3;
   bool _visible = true;
@@ -57,47 +57,13 @@ class _DiscriminationPageState extends State<DiscriminationPage> {
     final List<Widget> items=[];
     
     db.sublist(_start,_end).forEach((opt){
-      final widgetTemp= _build(opt['title']);
+      final widgetTemp= DiscriminationItem(
+        id: opt['id'], 
+        title: opt['title']
+      );
       items..add(widgetTemp);
     }); 
     return items;
-  }
-
-  Widget _build(String title) {
-    return ClipRect(
-      child: Container(
-        height: 60.0,
-        width: 180.0,
-        margin: EdgeInsets.all(25.0),
-        decoration: BoxDecoration(
-          color: _color,
-          borderRadius: BorderRadius.circular(10.0),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.1),
-              spreadRadius: 2,
-              blurRadius: 5,
-              offset: Offset(0, 3)
-            ),
-          ],
-        ),
-        child: FlatButton(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(height: 5.0),
-              Text(title, style: TextStyle(color: Colors.black, fontSize: 22.0)),
-              SizedBox(height: 5.0),
-            ],
-          ),
-          onPressed: (){
-            setState(() {
-              _color=Color.fromRGBO(242, 126, 142, 0.7);
-            });
-          },
-        ),
-      ),
-    );
   }
 
   void _nextButton(BuildContext context){
