@@ -45,6 +45,7 @@ flutter:
   assets:
    - data/menu_opts.json
    - data/imitate.json
+   - assets/img/
    - assets/img/imitate/
    - assets/sound/imitate/
    - data/sound.json

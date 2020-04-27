@@ -37,8 +37,9 @@ class _SoundPageState extends State<SoundPage> {
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
 
         if(snapshot.hasData){
-          return Padding(
-          padding: EdgeInsets.only(top:60.0,left: 10.0),
+          return Container(
+          alignment: Alignment(0.0, 0.0),
+          padding: EdgeInsets.only(top:50.0),
           child: Column(
             children: _dataItems(snapshot.data)
           ),

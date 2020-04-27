@@ -33,8 +33,8 @@ class _DiscriminationImagesPageState extends State<DiscriminationImagesPage> {
       future: discriminationImagesProvider.loadData(),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
-        return Padding(
-          padding: EdgeInsets.only(top:60.0,left: 20.0),
+        return Container(
+          alignment: Alignment(0.0, -0.5),
           child: Wrap(
             alignment: WrapAlignment.spaceEvenly,
             spacing: 5.0, // gap between adjacent chips

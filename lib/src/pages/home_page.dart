@@ -15,6 +15,22 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Inicio'),
+        actions: [
+          Container(
+            padding: EdgeInsets.all(5.0),
+            child: Ink.image(
+              image: AssetImage('assets/img/logo-circular.png'),
+              padding: EdgeInsets.only(right:1.0),
+              width: 45.0,
+              height: 10.0,
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, 'aboutMe');
+                },
+              ),
+            ),
+          ),
+        ],
       ),
       body: _list(),
     );

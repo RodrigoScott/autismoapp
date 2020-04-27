@@ -37,7 +37,7 @@ class _ImitatePageState extends State<ImitatePage> {
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
         return Container(
-        padding: EdgeInsets.only(top:60.0,left: 10.0, right: 15.0),
+        alignment: Alignment(0.0, -0.5),
         child: Wrap(
           alignment: WrapAlignment.spaceEvenly,
           spacing: 3.0, // gap between adjacent chips
