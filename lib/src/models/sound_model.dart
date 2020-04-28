@@ -1,24 +1,43 @@
-import 'dart:convert';
 class Sound{
+  String activity;
+  List<dynamic> data;
+
+  Sound({this.activity, this.data});
+
+  factory Sound.fromJson(Map<String, dynamic> parsedJson){
+
+    var list = parsedJson['data'] as List;
+    List<dynamic> dataList = list.map((i) => Data.fromJson(i)).toList();
+
+  return Sound(
+    activity: parsedJson['activity'],
+    data: parsedJson['data'],
+  );
+}
+
+  Sound.fromJsonMap(item);
+
+}
+class Data{
   int id;
   String title;
   String voice;
 
-  Sound({
-    this.id,
-    this.title,
-    this.voice
-  });
+  Data({this.id, this.title, this.voice});
 
-  Sound.fromJson(String jsonList){
-    List<Sound> sounds = [];
+  factory Data.fromJson(Map<String, dynamic> parsedJson){
+    return Data(
+      id:parsedJson['id'],
+      title:parsedJson['title'],
+      voice:parsedJson['sound']
+    );
+  }
 
-    final jsonResponse = json.decode('data/sound.json');
-    //final sounds = new Sound.fromJson(jsonResponse);
+  getTitle(){
+    return title;
+  }
 
-    for(Sound sound in sounds){
-      sounds.add(sound);
-    }
-    //return sounds;
+  getVoice(){
+    return voice;
   }
 }

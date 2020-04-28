@@ -3,6 +3,9 @@ import 'package:autismoapp/src/widgets/sound_item.dart';
 import 'package:autismoapp/src/providers/sound_provider.dart';
 
 class SoundPage extends StatefulWidget {
+
+  final soundProvider=new SoundProvider();
+
   @override
   _SoundPageState createState() => _SoundPageState();
 }
@@ -40,6 +43,32 @@ class _SoundPageState extends State<SoundPage> {
           return Container(
           alignment: Alignment(0.0, 0.0),
           padding: EdgeInsets.only(top:50.0),
+          child: SoundItem(
+            sounds: snapshot.data,
+          )
+        );
+        }else{
+          return Container(
+            height: 400.0,
+            child: Center(
+              child: CircularProgressIndicator()
+            )
+          );
+        }
+      },
+    );
+  }
+
+  /*Widget _data() {
+    return FutureBuilder(
+      future: soundProvider.loadData(),
+      initialData: [],
+      builder: (context, AsyncSnapshot<List<dynamic>> snapshot){
+
+        if(snapshot.hasData){
+          return Container(
+          alignment: Alignment(0.0, 0.0),
+          padding: EdgeInsets.only(top:50.0),
           child: Column(
             children: _dataItems(snapshot.data)
           ),
@@ -49,8 +78,8 @@ class _SoundPageState extends State<SoundPage> {
             height: 400.0,
             child: Center(
               child: CircularProgressIndicator()
-              )
-            );
+            )
+          );
         }
       },
     );
@@ -59,7 +88,7 @@ class _SoundPageState extends State<SoundPage> {
   List<Widget> _dataItems( List<dynamic> db){
     final List<Widget> items=[];
     
-    db.sublist(_start,_end).forEach((opt){
+    db.forEach((opt){
       final widgetTemp= SoundItem(
         id: opt['id'], 
         title: opt['title'], 
@@ -68,7 +97,7 @@ class _SoundPageState extends State<SoundPage> {
       items..add(widgetTemp);
     }); 
     return items;
-  }
+  }*/
 
   void _nextButton(BuildContext context){
     setState(() {

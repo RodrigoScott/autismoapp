@@ -3,22 +3,22 @@ import 'dart:convert';
 import 'dart:async' show Future;
 import 'package:autismoapp/src/models/sound_model.dart';
 
-class _SoundProvider{
+class SoundProvider{
   
   List<dynamic> db=[];
 
-  _SoundProvider();
+  SoundProvider();
 
   Future<List<Sound>> loadData() async {
 
     final jsonString=await rootBundle.loadString('data/sound.json');
     final jsonResponse = json.decode(jsonString);
     final sound = new Sound.fromJson(jsonResponse);
-    print(sound.id);
+    //print(sound.data[0]);
 
-    return [];
+    return sound.data;
   }
 
 }
 
-final soundProvider=new _SoundProvider();
+final soundProvider=new SoundProvider();
