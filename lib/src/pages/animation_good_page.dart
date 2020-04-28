@@ -1,5 +1,5 @@
+import 'package:autismoapp/src/widgets/animation_good_item.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audio_cache.dart';
 import 'package:autismoapp/src/providers/animation_good_provider.dart';
 
 class AnimationGoodPage extends StatefulWidget {
@@ -8,11 +8,10 @@ class AnimationGoodPage extends StatefulWidget {
 }
 
 class _AnimationGoodPageState extends State<AnimationGoodPage> {
-  
-  AudioCache _player = AudioCache();
+
   int _end=1;
   int _start=0;
-
+  
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar( ),
@@ -36,40 +35,26 @@ class _AnimationGoodPageState extends State<AnimationGoodPage> {
     final List<Widget> items=[];
 
     db..sublist(0,1).forEach((opt){
-      final widgetTemp=_buildAnimation(opt['image'], opt['sound']);
+      _sound();
+      final widgetTemp=AnimationGoodItem(
+        image: opt['image'],
+        sound: opt['sound'],
+      );
       items..add(widgetTemp);
     });
     return items;
   }
 
-  Widget _buildAnimation(String image, String sound){
+  void _sound(){
+    _start+=1;
+    _end+=1;
 
-    _player.play(sound);
-    
-    return ClipRect(
-      child: Container(
-        height: 530.0,
-        width: 400.0,
-        child: Container(
-          child: Image.asset(image),
-          height: 500.0,
-          width: 350.0
-        ),
-      ),
-    );
+    if(_end==11){
+      _start=0;
+      _end=1;
+      print(_start);
+      print(_end);
+    }
   }
 
-  void _sound(String sound){
-    setState(() {
-      _start+=1;
-      _end+=1;
-
-      if(_end==11){
-        _start=0;
-        _end=1;
-        print(_start);
-        print(_end);
-      }
-    });
-  }
 }

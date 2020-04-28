@@ -15,8 +15,6 @@ class Sound{
   );
 }
 
-  Sound.fromJsonMap(item);
-
 }
 class Data{
   int id;

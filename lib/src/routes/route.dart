@@ -1,5 +1,6 @@
 import 'package:autismoapp/src/pages/about_me_page.dart';
 import 'package:autismoapp/src/pages/animation_good_page.dart';
+import 'package:autismoapp/src/pages/prueba_sound.dart';
 import 'package:flutter/material.dart';
 import 'package:autismoapp/src/pages/home_page.dart';
 import 'package:autismoapp/src/pages/sound_page.dart';
@@ -16,5 +17,6 @@ Map<String, WidgetBuilder> getApplicationRoutes(){
   'discriminationImages'  : (BuildContext context )=>DiscriminationImagesPage(),
   'animationGood'         : (BuildContext context )=>AnimationGoodPage(),
   'aboutMe'               : (BuildContext context )=>AboutMePage(),
+  'prueba'                : (BuildContext context )=>PruebaSound(),
   };
 }

@@ -6,8 +6,9 @@ class DiscriminationImageItem extends StatefulWidget {
   final int id;
   final Image image;
   final String title;
+  final String category;
   
-  const DiscriminationImageItem({this.id, this.image, this.title});
+  const DiscriminationImageItem({this.id, this.image, this.title, this.category});
 
   @override
   _DiscriminationImageItemState createState() {
@@ -59,6 +60,7 @@ class _DiscriminationImageItemState extends State<DiscriminationImageItem> {
             ],
           ),
           onPressed: (){
+            print(this.widget.id);
             setState(() {
                 _colorBorder = Color.fromRGBO(149, 162, 244,1.0);
                 _widthBorder=7.0;
@@ -68,4 +70,11 @@ class _DiscriminationImageItemState extends State<DiscriminationImageItem> {
       ),
     );
   }
+
+  void _review(){
+    if(this.widget.id==this.widget.id){
+
+    }
+  }
+
 }

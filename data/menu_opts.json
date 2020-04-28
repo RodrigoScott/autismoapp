@@ -15,6 +15,11 @@
             "route" : "discrimination",
             "icon" : "widgets",
             "title": "Discriminación de conjuntos"
+        },
+        {
+            "route" : "prueba",
+            "icon" : "widgets",
+            "title": "Prueba"
         }
         
     ]
