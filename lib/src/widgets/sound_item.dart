@@ -1,5 +1,6 @@
 import 'package:audioplayers/audio_cache.dart';
 import 'package:autismoapp/src/models/sound_model.dart';
+import 'package:autismoapp/src/widgets/sound_buttons.dart';
 import 'package:flutter/material.dart';
 
 class SoundItem extends StatefulWidget {
@@ -32,43 +33,17 @@ class _SoundItemState extends State<SoundItem> {
               child: Row(
                 children: <Widget>[
                   Icon(Icons.volume_up),
-                  Text(sounds.getTitle(), textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
+                  Text('sounds.getTitle()', textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
                 ],
               ),
               onPressed: (){
                 AudioCache player = AudioCache();
-                player.play(sounds.getVoice());
+                //player.play(sounds.getVoice());
               },
             )
           ),
           Spacer(flex: 2),
-          ClipOval(
-            child: Material(
-              color: Colors.green, 
-              child: InkWell(
-                child: SizedBox(
-                  width: 35,
-                  height: 35,
-                  child: Icon(Icons.check, color: Colors.white)
-                ),
-                onTap: () {},
-              )
-            ),
-          ),
-          Spacer(),
-          ClipOval(
-            child: Material(
-              color: Colors.red, 
-              child: InkWell(
-                child: SizedBox(
-                  width: 35,
-                  height: 35,
-                  child: Icon(Icons.clear, color: Colors.white)
-                ),
-                onTap: () {},
-              )
-            ),
-          ),
+          SoundButton(),
           Spacer(flex: 2),
           Container(
             child: FlatButton(
@@ -77,12 +52,12 @@ class _SoundItemState extends State<SoundItem> {
               child: Row(
                 children: <Widget>[
                   Icon(Icons.volume_up),
-                  Text(sounds.getTitle(), textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
+                  Text('sounds.getTitle()', textAlign: TextAlign.center, style: TextStyle(fontSize: 25.0,)),
                 ],
               ),
               onPressed: (){
                 AudioCache player = AudioCache();
-                player.play(sounds.getVoice());
+               // player.play(sounds.getVoice());
               },
             )
           ),
