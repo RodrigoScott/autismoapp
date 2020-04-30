@@ -1,12 +1,12 @@
 class Sounds {
   String activity;
-  List<dynamic> sounds;
+  List<Sound> sounds;
 
   Sounds({this.activity, this.sounds});
 
   factory Sounds.fromJson(Map<String, dynamic> parsedJson) {
     var list = parsedJson['data'] as List;
-    List<dynamic> sounds = list.map((i) => Sound.fromJson(i)).toList();
+    List<Sound> sounds = list.map((i) => Sound.fromJson(i)).toList();
 
     return Sounds(
       activity: parsedJson['activity'],
