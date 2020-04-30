@@ -1,41 +1,39 @@
-class Sound{
+class Sounds {
   String activity;
-  List<dynamic> data;
+  List<dynamic> sounds;
 
-  Sound({this.activity, this.data});
+  Sounds({this.activity, this.sounds});
 
-  factory Sound.fromJson(Map<String, dynamic> parsedJson){
-
+  factory Sounds.fromJson(Map<String, dynamic> parsedJson) {
     var list = parsedJson['data'] as List;
-    List<dynamic> dataList = list.map((i) => Data.fromJson(i)).toList();
+    List<dynamic> sounds = list.map((i) => Sound.fromJson(i)).toList();
 
-  return Sound(
-    activity: parsedJson['activity'],
-    data: parsedJson['data'],
-  );
+    return Sounds(
+      activity: parsedJson['activity'],
+      sounds: sounds,
+    );
+  }
 }
 
-}
-class Data{
+class Sound {
   int id;
   String title;
   String voice;
 
-  Data({this.id, this.title, this.voice});
+  Sound({this.id, this.title, this.voice});
 
-  factory Data.fromJson(Map<String, dynamic> parsedJson){
-    return Data(
-      id:parsedJson['id'],
-      title:parsedJson['title'],
-      voice:parsedJson['sound']
-    );
+  factory Sound.fromJson(Map<String, dynamic> parsedJson) {
+    return Sound(
+        id: parsedJson['id'],
+        title: parsedJson['title'],
+        voice: parsedJson['sound']);
   }
 
-  getTitle(){
+  getTitle() {
     return title;
   }
 
-  getVoice(){
+  getVoice() {
     return voice;
   }
 }
